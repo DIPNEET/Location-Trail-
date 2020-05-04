@@ -1,6 +1,24 @@
-html, body {
+html,body {
   margin: 0;
   padding: 0;
 
+  
+}
  
+body {
+  text-align: center;
+  margin: 10px;
+  background-image: url("img2.jpg");
+  background-size: auto;
+}
+
+canvas {
+  margin: 20px auto;
+}
+button {
+  color:black;
+  background: orange;
+  border: solid black;
+ 
+  
 }
