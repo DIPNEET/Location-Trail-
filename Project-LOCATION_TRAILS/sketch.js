@@ -6,9 +6,9 @@ const layer = new ol.layer.Vector({
   source: source
 });
 
-start.addEventListener('click', geoTrack); 
+start.addEventListener('click', tracker); 
 
-function geoTrack() {
+function tracker() {
   
 
   if (navigator.geolocation) {
@@ -19,7 +19,7 @@ function geoTrack() {
        
           const div = document.createElement('div');
           div.className = 'alert alert-info';
-          div.innerHTML = `<strong>Latitude:</strong> ${pos.coords.latitude} <strong>Longitude:</strong> ${pos.coords.longitude} <strong>Date/Time:</strong> ${Date()}`;
+          div.innerHTML = `<strong>Latitude:</strong> ${pos.coords.latitude} <strong>Longitude:</strong> ${pos.coords.longitude}<br> <strong>Date/Time:</strong> ${Date()}<br><br>`;
           document.querySelector('#card-footer').insertBefore(div, document.querySelector('.alert'));
   
        
